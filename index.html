@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Grand Luxe</title>
+    <style>
+
+    </style>
+</head>
+<body class="overflow-x-hidden bg-black">
+    <header class="z-20 top-0 start-0 sticky w-full">
+        <nav class="nav flex p-5 bg-black items-center gap-1 pl-3 lg:text-3xl lg:gap-10 lg:p-10 md:text-2xl">
+            <!-- Mobile menu button (hamburger icon) -->
+            <button id="menu-button" class="text-white focus:outline-none lg:hidden transition ">
+                <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Logo and Title -->
+            
+            <svg class="h-15 w-15 text-yellow-400 md:h-25 md:w-25"
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <!-- Diamond border -->
+                <rect
+                    x="20"
+                    y="20"
+                    width="80"
+                    height="80"
+                    fill="none"
+                    stroke="#EAB308"
+                    stroke-width="2"
+                    transform="rotate(45 60 60)"
+                />
+
+                <!-- Text GL -->
+                <text
+                    x="60"
+                    y="68"
+                    text-anchor="middle"
+                    font-family="serif"
+                    font-size="32"
+                    letter-spacing="2"
+                    fill="CurrentColor"
+                >
+                    GL
+                </text>
+            </svg>
+
+            <div>
+                <h1 class="text-lg tracking-widest text-white font-serif md:text-2xl">GRAND LUXE</h1>
+                <h2 class="text-[7px] text-yellow-400 font-sans tracking-[3px] hidden md:block md:text-2xl">HOTEL & RESIDENCE</h2>
+            </div>
+
+            <div class="ml-auto hidden lg:flex md:items-center">
+                <ul class="flex gap-7 justify-center">
+                    <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">Home</a></li>
+                    <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">About</a></li>
+                    <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">Services</a></li>
+                    <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Reserve Button -->
+            <div class="flex items-center ml-auto">
+                <a class="bg-yellow-500 pl-4 pr-4 p-2 active:bg-yellow-600 tracking-widest md:p-6 md:pl-16 md:pr-16">RESERVE</a>
+            </div>
+        </nav>
+
+        <!-- Navigation links (menu) -->
+        <div id="menu" class="hidden lg:hidden w-full justify-center items-center p-6 rounded-b-3xl bg-linear-to-b from-black to-neutral-900">
+            <ul class="flex gap-7 justify-center">
+                <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">Home</a></li>
+                <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">About</a></li>
+                <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">Services</a></li>
+                <li><a href="#" class="block text-gray-300 active:bg-neutral-700 active:rounded active:p-1 p-1 hover:bg-neutral-700 hover:rounded">Contact</a></li>
+            </ul>
+        </div>
+            
+    </header>
+
+    <main class="max-w-screen-7xl mx-auto">
+        <section class="hero bg-cover bg-center h-95 md:h-full md:w-full overflow-hidden"
+                        style="background-image: url('./img/header.jpeg');">
+            <!-- Hero -->
+            <div class="flex items-center justify-center h-full bg-black/45 p-10 max-w-full lg:p-80 md:p-20">
+                <div class="text-center text-white mt-16">
+                    <h1 class="text-4xl font-serif mb-2 tracking-widest md:text-6xl lg:text-9xl">GRAND LUXE</h1>
+                    <p class="text-sm font-sans mb-6 text-yellow-500 tracking-[2px] md:text-2xl lg:text-4xl">WHERE THE LUXURY MEETS PERFECTION</p>
+                    <p class="text-sm font-serif text-center m-4 md:text-lg md:tracking-wider lg:text-2xl">Indulge in an extraordinary experience where timeless elegance and modern sophistication create moments of pure bliss</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black py-20">
+            <div class="max-w-6xl mx-auto px-6 lg:max-w-max md:max-w-auto md:px-20">
+                <div class="border border-yellow-500 p-8 lg:p-18 bg-black grid gap-8 lg:grid-cols-4 items-end lg:flex lg:justify-center">
+                    <!-- ARRIVAL -->
+                    <div>
+                        <label class="block text-yellow-500 tracking-widest mb-3 text-sm lg:text-4xl md:text-2xl">
+                            ARRIVAL
+                        </label>
+                        <input type="date"
+                            class="w-full bg-neutral-900 border border-neutral-700 text-white p-4 focus:outline-none 
+                            focus:border-yellow-500 transition lg:text-3xl lg:w-80 md:text-2xl"/>
+                    </div>
+
+                    <!-- DEPARTURE -->
+                    <div>
+                        <label class="block text-yellow-500 tracking-widest mb-3 text-sm lg:text-4xl md:text-2xl">
+                            DEPARTURE
+                        </label>
+                        <input type="date"
+                            class="w-full bg-neutral-900 border border-neutral-700 text-white p-4 focus:outline-none 
+                            focus:border-yellow-500 transition lg:text-3xl lg:w-80 md:text-2xl"/>
+                    </div>
+
+                    <!-- GUESTS -->
+                    <div>
+                        <label class="block text-yellow-500 tracking-widest mb-3 text-sm lg:text-4xl md:text-2xl">
+                            GUESTS
+                        </label>
+                        <select
+                            class="w-full bg-neutral-900 border border-neutral-700 text-white p-4 focus:outline-none 
+                            focus:border-yellow-500 transition lg:text-3xl lg:w-80 md:text-2xl">
+                            <option class="bg-black">1 Guest</option>
+                            <option class="bg-black">2 Guests</option>
+                            <option class="bg-black">3 Guests</option>
+                            <option class="bg-black">4+ Guests</option>
+                        </select>
+                    </div>
+
+                    <!-- BUTTON -->
+                    <div>
+                        <button
+                            class="w-full bg-yellow-500 text-black tracking-widest py-4 
+                            hover:bg-yellow-600 transition duration-300 lg:text-3xl lg:p-5
+                             md:text-2xl">
+                            CHECK AVAILABILITY
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- SIGNATURE SUITS -->
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="bg-black/95 max-w-7xl mx-auto px-6">
+">
+                <div class="p-7 items-center text-center flex flex-col gap-4">
+                    <h1 class="relative inline-block pt-20 md:text-6xl
+                            text-3xl font-serif text-white tracking-widest
+                            before:content-['']
+                            before:absolute
+                            before:top-10
+                            before:left-1/2
+                            before:-translate-x-1/2
+                            before:w-50
+                            before:h-px
+                            before:bg-yellow-500
+                            lg:mt-26 lg:text-8xl">
+                    Signature Suites
+                    </h1>
+                    <p class="hidden md:block text-gray-400 text-2xl mt-8 
+                        tracking-widest max-w-7xl font-serif md:text-lg">
+                        Each suite is a masterpiece of design, meticulously crafted to provide an unparalleled experience of comfort and luxury</p>
+                </div>
+
+                <!-- ROOM 1 -->
+                <!-- ROOM 1 -->
+                <!-- ROOM 1 -->
+                <div class="flex flex-col lg:flex-row items-center lg:text-left
+                            mb-20 gap-10 lg:gap-20 lg:justify-start
+                            lg:mt-32 lg:ml-24 md:mt-24">
+
+                    <!-- IMAGE -->
+                    <div class="group relative w-full 
+                                max-w-xs 
+                                md:max-w-2xl 
+                                lg:max-w-4xl
+                                aspect-square overflow-hidden border
+                                transition-colors duration-300 hover:border-yellow-400">
+
+                        <img src="../img/room1.jpeg" 
+                            class="w-full h-full object-cover
+                            transition-transform duration-700 ease-out
+                            group-hover:scale-110
+                            border border-yellow-400/30
+                            active:scale-110"/>
+
+                        <!-- PRICE -->
+                        <div class="absolute top-4 right-4
+                            md:top-8 md:right-8
+                            p-2 border border-yellow-500 
+                            bg-black/70
+                            md:w-max md:p-6 md:px-8">
+
+                            <p class="text-yellow-400 tracking-widest text-sm md:text-2xl">FROM</p>
+
+                            <div class="md:flex gap-2 md:items-center">
+                                <p class="text-white text-3xl font-serif md:text-5xl">$450</p>
+                                <p class="text-gray-400 text-sm md:text-2xl">/night</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="mt-6">
+
+                        <h2 class="text-3xl font-serif text-white mb-3 text-center 
+                                tracking-widest md:text-6xl md:mb-10 lg:text-left">
+                            Deluxe Suite
+                        </h2>
+
+                        <p class="text-gray-400 max-w-md mb-10 text-center 
+                                mx-auto lg:mx-0 md:text-2xl lg:mb-16 lg:text-left">
+                            Refined elegance with panoramic city views
+                        </p>
+
+                        <!-- SPECS -->
+                        <div class="flex gap-16 mb-10 text-center justify-center 
+                                    md:text-left lg:justify-start">
+                            <div>
+                                <p class="text-yellow-400 text-lg tracking-widest lg:text-2xl">SIZE</p>
+                                <p class="text-white text-lg lg:text-2xl">45 m²</p>
+                            </div>
+                            <div>
+                                <p class="text-yellow-400 text-lg tracking-widest lg:text-2xl">BEDS</p>
+                                <p class="text-white text-lg lg:text-2xl">King Size Bed</p>
+                            </div>
+                        </div>
+
+                        <!-- ICONS -->
+                        <div class="flex gap-5 mb-10 justify-center items-center 
+                                    lg:mb-20 lg:gap-10 lg:justify-start">
+
+                            <div class="text-center">
+                                <svg class="text-white p-2 border border-yellow-400 md:w-20 md:h-20 lg:w-16 lg:h-16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="55" height="55"
+                                    viewBox="0 0 24 28"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M5 12.55a11 11 0 0 1 14 0"></path>
+                                    <path d="M8.5 16.05a6 6 0 0 1 7 0"></path>
+                                    <path d="M12 20h.01"></path>
+                                </svg>
+                                <p class="text-gray-400 md:text-2xl">WiFi</p>
+                            </div>
+
+                            <div class="text-center">
+                                <svg class="text-white p-3 border border-yellow-400 md:w-20 md:h-20 lg:w-16 lg:h-16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="55" height="55"
+                                    viewBox="0 0 24 26"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="13" rx="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="7" x2="12" y2="5"></line>
+                                    <line x1="6" y1="3" x2="12" y2="7"></line>
+                                    <line x1="18" y1="3" x2="12" y2="7"></line>
+                                </svg>
+                                <p class="text-gray-400 md:text-2xl">TV</p>
+                            </div>
+
+                            <div class="text-center">
+                                <svg class="text-white p-3 border border-yellow-400 md:w-20 md:h-20 lg:w-16 lg:h-16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="55" height="55"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 8h13v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"></path>
+                                    <path d="M16 10h2a3 3 0 0 1 0 6h-2"></path>
+                                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                                </svg>
+                                <p class="text-gray-400 md:text-2xl">Minibar</p>
+                            </div>
+
+                            <div class="text-center">
+                                <svg class="text-white p-3 border border-yellow-400 md:w-20 md:h-20 lg:w-16 lg:h-16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="55" height="55"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 8h10a3 3 0 1 0-3-3"></path>
+                                    <path d="M3 14h14a3 3 0 1 1-3 3"></path>
+                                    <path d="M3 20h8a2 2 0 1 0-2-2"></path>
+                                </svg>
+                                <p class="text-gray-400 md:text-2xl">Climate</p>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center lg:justify-start">
+                            <a class="p-4 border border-yellow-500 tracking-widest text-yellow-400 
+                                    hover:bg-yellow-500 hover:text-black 
+                                    transition-colors duration-300
+                                    md:text-2xl md:p-6 md:px-10">
+                                EXPLORE SUITE
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- AMENTIES -->
+        <section>
+            <div class="bg-black">
+                <div class="p-4 items-center text-center flex flex-col gap-4 px-6 ">
+                    <h1 class="relative inline-block pt-20
+                            text-3xl font-serif text-white tracking-widest
+                            before:content-['']
+                            before:absolute
+                            before:top-10
+                            before:left-1/2
+                            before:-translate-x-1/2
+                            before:w-50
+                            before:h-px md:text-6xl md:mb-10 lg:text-left
+                            before:bg-yellow-500">
+                    Exclusive Amenities
+                    </h1>
+                    <p class="hidden md:block text-gray-400 text-2xl px-6
+                        tracking-widest max-w-7xl font-serif lg:mb-20 md:text-2xl md:mb-16 lg:text-left">
+                    Immerse yourself in world-class facilities designed to elevate every moment of your stay
+                    </p>
+                </div>  
+                
+                <div class="flex flex-col lg:grid lg:grid-cols-2 gap-7 lg:mt-24
+                    max-w-6xl mx-auto mt-10 px-6 items-center lg:max-w-7/12">
+
+                    <!-- AMENTIES 1 -->
+                    <div class="flex mb-10 md:mb-auto">
+                        <div
+                            class="group relative w-full max-w-md
+                                lg:max-w-3xl aspect-square 
+                                overflow-hidden border mx-auto
+                                transition-colors duration-30
+                                hover:border-yellow-400 md:max-w-2xl ">
+                            <!-- IMAGE -->
+                            <img
+                            src="../img/amenities1.jpeg"
+                            class="group relative w-full 
+                                max-w-xs
+                                md:max-w-2xl 
+                                lg:max-w-4xl
+                                aspect-square overflow-hidden border
+                                transition-colors duration-300 hover:border-yellow-40"
+                            />
+
+                            <!-- DARK OVERLAY -->
+                            <div class="pointer-events-none absolute inset-0 bg-black/30"></div>
+
+                            <!-- BOTTOM INNER SHADOW -->
+                            <div
+                            class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2
+                                    bg-linear-to-t from-black/70 via-black/30 to-transparent">
+                            </div>
+                            <!-- TEXT CONTENT -->
+                            <div class="absolute bottom-50 left-6 right-6 lg:bottom-[80%] lg:left-10">
+                                <p class="text-yellow-400 tracking-widest mb-1 md:text-2xl">
+                                    AQUATIC SANCTUARY
+                                </p>
+                                <p class="text-white text-3xl font-serif mb-3 md:text-5xl">
+                                    Infinity Pool
+                                </p>
+                            </div>
+                            <div class="absolute inset-x-0 bottom-0 md:inset-x-20 p-30 md:bottom-px-6 md:mt-28 lg:bottom-[10%] lg:left-10">
+                                <p class="text-gray-300 text-sm max-w-xs md:max-w-200 md:text-2xl font-serif">
+                                    An elevated oasis featuring panoramic vistas and premium poolside service
+                                </p>
+                            </div>
+                            <div class="absolute inset-x-0 bottom-10 md:inset-x-20 md:bottom-20 px-6
+                                transition-all duration-500 ease-out
+                                md:opacity-0 md:translate-y-4 lg:left-10
+                                md:group-hover:opacity-100 md:group-hover:translate-y-0">
+
+                                <a
+                                    class="inline-block px-6 py-3
+                                        border border-yellow-400 text-yellow-400
+                                        hover:bg-yellow-400 hover:text-black
+                                        transition-colors duration-300
+                                        md:text-2xl md:px-10 md:py-5">
+                                    DISCOVER MORE
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    < class="bg-black/95 justify-center flex flex-col items-center font-serif">
+        <div class="m-10">
+            <div class="flex items-center justify-center mt-10">
+                <svg class="h-15 w-15 text-yellow-400 mr-2"
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <!-- Diamond border -->
+                    <rect
+                        x="20"
+                        y="20"
+                        width="80"
+                        height="80"
+                        fill="none"
+                        stroke="#EAB308"
+                        stroke-width="2"
+                        transform="rotate(45 60 60)"
+                    />
+
+                    <!-- Text GL -->
+                    <text
+                        x="60"
+                        y="68"
+                        text-anchor="middle"
+                        font-family="serif"
+                        font-size="32"
+                        letter-spacing="2"
+                        fill="CurrentColor"
+                    >
+                        GL
+                    </text>
+                </svg>
+
+                <div>
+                    <h1 class="tracking-widest text-white font-serif">GRAND LUXE</h1>
+                    <h2 class="text-yellow-400 font-sans tracking-[3px]">HOTEL & RESIDENCE</h2>
+                </div> 
+            </div>
+            <div class="mt-4 mb-15 text-center max-w-max">
+                <p class="text-gray-400 text-sm">
+                    An iconic destination where timeless elegance meets contemporary luxury. Experience the pinnacle of hospitality in the heart of the city.
+                </p>
+            </div>
+            <div class="flex gap-x-10 justify-center">
+                <div class="mb-10">
+                    <h1 class="text-yellow-500 tracking-widest">NAVIGATE</h1>
+                    <ul class="grid gap-6 mt-2 mb-4 text-white-400 text-sm text-white">
+                        <li class="hover:text-yellow-400 transition-colors duration-300 cursor-pointer">About Us</li>
+                        <li class="hover:text-yellow-400 transition-colors duration-300 cursor-pointer">Suites & Rooms</li>
+                        <li class="hover:text-yellow-400 transition-colors duration-300 cursor-pointer">Amenities</li>
+                        <li class="hover:text-yellow-400 transition-colors duration-300 cursor-pointer">Exclusive Offers</li>
+                        <li class="hover:text-yellow-400 transition-colors duration-300 cursor-pointer">Gallery</li>
+                    </ul>
+                </div>
+                <div class="mb-10">
+                    <h1 class="text-yellow-500 tracking-wider">CONTACT</h1>
+                    <ul class="grid gap-6 mt-2 mb-4 text-white-400 text-sm">
+                        <li class="text-white tracking-widest">123 Luxury Avenue <br> Downtown District <br> New York, NY 100</li>
+                        <li class="text-white tracking-wider">+1 (666) 123-###</li>
+                        <li class="text-white tracking-wider">reservations <br> @grandluxe.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-yellow-500">
+                <p class="text-gray-400 font-sans justify-center flex mb-5 mt-5">&copy; 2025 707-909. All Rights Reserved.</p>
+                <div class="flex gap-6 items-center justify-center">
+                    <!-- Facebook (active) -->
+                    <div class="w-12 h-12 border border-yellow-400 rotate-45 flex items-center justify-center group hover:bg-yellow-400 transition active:bg-yellow-400">
+                        <svg class="w-6 h-6 -rotate-45 text-yellow-400 group-hover:text-black group-active:text-black"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor">
+                        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8
+                                c0-2.5 1.5-3.9 3.8-3.9
+                                1.1 0 2.3.2 2.3.2v2.5h-1.3
+                                c-1.3 0-1.7.8-1.7 1.6v1.9H16.5
+                                l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="w-12 h-12 border border-yellow-400 rotate-45 flex items-center justify-center group hover:bg-yellow-400 transition active:bg-yellow-400">
+                        <svg class="w-6 h-6 -rotate-45 text-yellow-400 group-hover:text-black group-active:text-black"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor">
+                        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10a5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2a1.1 1.1 0 0 0 0-2.2z"/>
+                        </svg>
+                    </div>
+
+                    <!-- Twitter -->
+                    <div class="w-12 h-12 border border-yellow-400 rotate-45 flex items-center justify-center group hover:bg-yellow-400 transition active:bg-yellow-400">
+                        <svg class="w-6 h-6 -rotate-45 text-yellow-400 group-hover:text-black group-active:text-black"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53
+                                A4.48 4.48 0 0 0 12.03 8v1
+                                A10.66 10.66 0 0 1 3 4s-4 9 5 13
+                                a11.64 11.64 0 0 1-7 2
+                                c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83
+                                A7.72 7.72 0 0 0 23 3z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const button = document.getElementById("menu-button");
+    const menu = document.getElementById("menu");
+
+    button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+
+</html>
